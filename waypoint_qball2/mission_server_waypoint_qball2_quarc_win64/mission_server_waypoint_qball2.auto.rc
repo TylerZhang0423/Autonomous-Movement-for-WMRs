@@ -1,0 +1,2 @@
+#include <winuser.rh>
+1 RT_MANIFEST "mission_server_waypoint_qball2.auto.manifest"

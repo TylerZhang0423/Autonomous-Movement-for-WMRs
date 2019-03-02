@@ -1,0 +1,54 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   6 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "P_00"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "P_01"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "P_10"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "P_11"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "x_angle"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "x_bias"\
+      Description  "EmlPersistent"\
+      SFName       ""\
+      Path         ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

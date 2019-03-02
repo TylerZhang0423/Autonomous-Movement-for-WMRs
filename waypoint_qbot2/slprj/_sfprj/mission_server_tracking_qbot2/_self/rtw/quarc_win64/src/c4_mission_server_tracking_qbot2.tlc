@@ -1,0 +1,56 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   6 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "sfEvent"\
+      Description  "ActiveChartEvent"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "isStable"\
+      Description  "IsstableBool"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "is_active_c4_mission_server_tracking_qbot2"\
+      Description  "StateIsActive"\
+      SFName       "is_active_c4_mission_server_tracking_qbot2"\
+      Path         "is_active_c4_mission_server_tracking_qbot2"\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_c4_mission_server_tracking_qbot2"\
+      Description  "StateActiveChild"\
+      SFName       "is_c4_mission_server_tracking_qbot2"\
+      Path         "is_c4_mission_server_tracking_qbot2"\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "start_stop_prev"\
+      Description  "ChangeDetectionDoubleBuffer"\
+      SFName       ""\
+      Path         "start_stop"\
+    }\
+    ChartData {\
+      Name         "start_stop_start"\
+      Description  "ChangeDetectionDoubleBuffer"\
+      SFName       ""\
+      Path         "start_stop"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

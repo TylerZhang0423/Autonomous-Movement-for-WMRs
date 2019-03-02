@@ -1,0 +1,2 @@
+#include <winuser.rh>
+1 RT_MANIFEST "mission_server_tracking_qbot2.auto.manifest"

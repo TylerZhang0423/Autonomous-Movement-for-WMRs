@@ -1,0 +1,2 @@
+#include <winuser.rh>
+1 RT_MANIFEST "mission_server_leader_follower_qbot2_qbot2.auto.manifest"
